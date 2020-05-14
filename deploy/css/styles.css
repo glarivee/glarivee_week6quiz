@@ -361,14 +361,6 @@ textarea {
 /* =============
     Footer
 ============= */
-#footer {
-  background-color: black;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%; }
-
 /* =============
     Section 1
 ============= */
