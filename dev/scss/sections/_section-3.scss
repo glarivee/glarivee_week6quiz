@@ -1,0 +1,87 @@
+/* =============
+    Section 3
+============= */
+#section-3{  
+    div {
+        display: grid;
+        grid-template-columns: 15px auto 10px;
+        grid-template-areas: ". section-3 .";
+
+        ul {
+            grid-area: ". section-3 .";
+            display: grid;
+            
+            grid-row-gap: 10px;
+            grid-column-gap: 50px;
+            
+
+            @include md{
+                display: grid;
+                grid-template-columns: 3fr 3fr;
+                grid-template-areas:
+                        "gallery-1 gallery-2 gallery-3";
+            }
+
+            @include lg{
+                display: grid;
+                grid-template-columns: 3fr 3fr;
+                grid-template-areas:
+                "gallery-1 gallery-2 gallery-3";
+            }
+
+            li {
+                background-size: cover;
+                height: 100%;
+            }
+        
+            #gallery-1{
+                background-image: url('../img/sign.jpg');
+                background-position-y: -120px;
+                height: 500px;
+                background-repeat: no-repeat;
+
+                @include md {
+                    grid-area: gallery-1;
+                    height: 450px;
+                    
+                }
+
+                @include lg{
+                    grid-area: gallery-1;
+                    height: 450px;
+                }
+            }
+
+            #gallery-2{
+                background-image: url('../img/perspectivecards.jpg');
+                height: 500px;
+
+                @include md{
+                    grid-area: gallery-2;
+                    height: 450px;
+                }
+
+                @include lg{
+                    grid-area: gallery-2;
+                    height: 450px;
+                }
+            }
+
+            #gallery-3{
+                background-image: url('../img/stackedcards.jpg');
+                height: 500px;
+
+                @include md {
+                    grid-area: gallery-3;
+                    height: 450px;
+                }
+
+                @include lg{
+                    grid-area: gallery-3;
+                    height: 450px;
+                }
+            }
+
+        }
+    }
+}

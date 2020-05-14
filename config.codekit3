@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "32001",
 "files": {
+	"/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.gitattributes",
+		"oF": 0
+		},
 	"/build/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
@@ -36,6 +44,61 @@
 		"oAP": "/deploy/css/styles-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/deploy/img/beachhero.jpg": {
+		"ft": 16384,
+		"iS": 1871920,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/beachhero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/perspectivecards.jpg": {
+		"ft": 16384,
+		"iS": 110271,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/perspectivecards.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/shoes.jpg": {
+		"ft": 16384,
+		"iS": 265467,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/shoes.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/sign.jpg": {
+		"ft": 16384,
+		"iS": 102734,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/sign.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/stackedcards.jpg": {
+		"ft": 16384,
+		"iS": 89279,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/stackedcards.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"/deploy/index.html": {
 		"cB": 0,
@@ -130,6 +193,14 @@
 		"oAP": "/design/content-quiz.sketch",
 		"oF": 0
 		},
+	"/dev/footer.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/footer.html",
+		"oF": 0
+		},
 	"/dev/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -143,8 +214,8 @@
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/dev/index.html",
-		"oF": 0
+		"oAP": "/deploy/index.html",
+		"oF": 2
 		},
 	"/dev/js/scripts-min.js": {
 		"bF": 0,
@@ -298,6 +369,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/scss/sections/_footer.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_footer.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/scss/sections/_section-1.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -307,6 +391,32 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/sections/_section-1.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_section-2.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_section-2.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_section-3.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_section-3.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -329,8 +439,8 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/dev/scss/styles.css",
-		"oF": 0,
+		"oAP": "/deploy/css/styles.css",
+		"oF": 2,
 		"oS": 0,
 		"uL": 1
 		},
@@ -346,7 +456,7 @@
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/dev/section-2.html",
 		"oF": 0
 		},
@@ -354,7 +464,7 @@
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/dev/section-3.html",
 		"oF": 0
 		},
@@ -392,7 +502,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 611177740.62491703,
-	"displayValue": "web2-week6-thursday-quiz",
+	"displayValue": "glarivee_week6quiz",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_orange",
 	"iconImageWasSetByUser": 0,

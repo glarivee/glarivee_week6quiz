@@ -9,7 +9,7 @@ html {
 /* =============
     Variables
 ============= */
-/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -29,6 +29,12 @@ html {
  */
 body {
   margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -311,28 +317,6 @@ template {
 /* =============
     Base
 ============= */
-figure {
-  padding: 0;
-  margin: 0; }
-
-ul {
-  padding: 0;
-  margin: 0; }
-  ul li {
-    list-style: none; }
-
-.container-grid {
-  display: grid;
-  grid-template-columns: auto 1200px auto;
-  grid-template-areas: ". grid-content .";
-  min-height: 100vh; }
-  .container-grid .grid-content {
-    grid-area: grid-content;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-
 /* =============
     Typography
 ============= */
@@ -377,15 +361,153 @@ textarea {
 /* =============
     Footer
 ============= */
+#footer {
+  background-color: black;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
 /* =============
     Section 1
 ============= */
+#section-1 div {
+  background-image: url("../img/beachhero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px; }
+  @media (min-width: 768px) {
+    #section-1 div {
+      height: 512px; } }
+  @media (min-width: 992px) {
+    #section-1 div {
+      height: 800px; } }
+  #section-1 div h1 {
+    text-align: center;
+    color: #1A4B58; }
+  #section-1 div h2 {
+    text-align: center;
+    color: #338595; }
+
 /* =============
-    Section 2
+    Section 1
 ============= */
+#section-2 #section-2-right {
+  display: grid;
+  grid-template-columns: 30px auto 30px;
+  grid-template-areas: ". section-2-right .";
+  padding: 15px 0;
+  color: #1A4B58; }
+  #section-2 #section-2-right div {
+    grid-area: ". section-2-right ."; }
+
+#section-2 aside {
+  background-image: url("../img/shoes.jpg");
+  background-size: cover;
+  background-position-x: -150px;
+  background-repeat: no-repeat; }
+  @media (min-width: 768px) {
+    #section-2 aside {
+      height: 200px;
+      background-position-x: -180px; } }
+  @media (min-width: 992px) {
+    #section-2 aside {
+      height: 900px;
+      background-position-x: -100px; } }
+@media (min-width: 768px) {
+  #section-2 {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "section-2-img section-2-right"; }
+    #section-2 #section-2-img {
+      grid-area: "section-2-img"; }
+    #section-2 #section-2-right {
+      grid-area: "section-2-right"; } }
+
+@media (min-width: 992px) {
+  #section-2 {
+    display: grid;
+    grid-template-columns: 75% auto;
+    grid-template-areas: "section-2-img section-2-right"; }
+    #section-2 #section-2-right {
+      grid-area: section-2-right; } }
+
+@media (min-width: 768px) {
+  #section-2 {
+    padding: 80px 0; } }
+
+@media (min-width: 992px) {
+  #section-2 {
+    padding: 60px 20px; } }
+
 /* =============
     Section 3
 ============= */
+#section-3 div {
+  display: grid;
+  grid-template-columns: 15px auto 10px;
+  grid-template-areas: ". section-3 ."; }
+  #section-3 div ul {
+    grid-area: ". section-3 .";
+    display: grid;
+    grid-row-gap: 10px;
+    grid-column-gap: 50px; }
+    @media (min-width: 768px) {
+      #section-3 div ul {
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        grid-template-areas: "gallery-1 gallery-2 gallery-3"; } }
+    @media (min-width: 992px) {
+      #section-3 div ul {
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        grid-template-areas: "gallery-1 gallery-2 gallery-3"; } }
+    #section-3 div ul li {
+      background-size: cover;
+      height: 100%; }
+    #section-3 div ul #gallery-1 {
+      background-image: url("../img/sign.jpg");
+      background-position-y: -120px;
+      height: 500px;
+      background-repeat: no-repeat; }
+      @media (min-width: 768px) {
+        #section-3 div ul #gallery-1 {
+          grid-area: gallery-1;
+          height: 450px; } }
+      @media (min-width: 992px) {
+        #section-3 div ul #gallery-1 {
+          grid-area: gallery-1;
+          height: 450px; } }
+    #section-3 div ul #gallery-2 {
+      background-image: url("../img/perspectivecards.jpg");
+      height: 500px; }
+      @media (min-width: 768px) {
+        #section-3 div ul #gallery-2 {
+          grid-area: gallery-2;
+          height: 450px; } }
+      @media (min-width: 992px) {
+        #section-3 div ul #gallery-2 {
+          grid-area: gallery-2;
+          height: 450px; } }
+    #section-3 div ul #gallery-3 {
+      background-image: url("../img/stackedcards.jpg");
+      height: 500px; }
+      @media (min-width: 768px) {
+        #section-3 div ul #gallery-3 {
+          grid-area: gallery-3;
+          height: 450px; } }
+      @media (min-width: 992px) {
+        #section-3 div ul #gallery-3 {
+          grid-area: gallery-3;
+          height: 450px; } }
 /* =============
-    Section 4
+    Footer
 ============= */
+#footer {
+  background-color: black;
+  height: 100px;
+  position: fixed;
+  top: 1600px;
+  left: 0;
+  width: 100%; }

@@ -320,6 +320,20 @@ template {
 /* =============
     Typography
 ============= */
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+.section-title {
+  font-weight: 300; }
+
 /* =============
     Buttons
 ============= */
@@ -350,3 +364,132 @@ textarea {
 /* =============
     Section 1
 ============= */
+#section-1 div {
+  background-image: url("../img/beachhero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px; }
+  @media (min-width: 768px) {
+    #section-1 div {
+      height: 512px; } }
+  @media (min-width: 992px) {
+    #section-1 div {
+      height: 800px; } }
+  #section-1 div h1 {
+    text-align: center;
+    color: #1A4B58; }
+  #section-1 div h2 {
+    text-align: center;
+    color: #338595; }
+
+/* =============
+    Section 1
+============= */
+#section-2 #section-2-right {
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: ". section-2-right .";
+  padding: 60px 0;
+  color: #1A4B58; }
+  #section-2 #section-2-right div {
+    grid-area: ". section-2-right ."; }
+
+#section-2 aside {
+  background-image: url("../img/shoes.jpg");
+  background-size: cover;
+  background-position-x: -150px;
+  background-repeat: no-repeat; }
+  @media (min-width: 768px) {
+    #section-2 aside {
+      height: 500px;
+      background-position-x: -180px; } }
+  @media (min-width: 992px) {
+    #section-2 aside {
+      height: 2040px;
+      background-position-x: -100px; } }
+@media (min-width: 768px) {
+  #section-2 {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "section-2-img section-2-right"; }
+    #section-2 #section-2-img {
+      grid-area: "section-2-img"; }
+    #section-2 #section-2-right {
+      grid-area: "section-2-right"; } }
+
+@media (min-width: 992px) {
+  #section-2 {
+    display: grid;
+    grid-template-columns: 25% auto;
+    grid-template-areas: "section-2-img section-2-right"; }
+    #section-2 #section-2-text {
+      grid-area: section-2-right; } }
+
+@media (min-width: 768px) {
+  #section-2 {
+    padding: 80px 0; } }
+
+@media (min-width: 992px) {
+  #section-2 {
+    padding: 60px 20px; } }
+
+/* =============
+    Section 3
+============= */
+#section-3 div {
+  display: grid;
+  grid-template-columns: 15px auto 10px;
+  grid-template-areas: ". section-3 ."; }
+  #section-3 div ul {
+    grid-area: ". section-3 .";
+    display: grid;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px; }
+    @media (min-width: 768px) {
+      #section-3 div ul {
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        grid-template-areas: "gallery-1 gallery-2 gallery-3"; } }
+    @media (min-width: 992px) {
+      #section-3 div ul {
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        grid-template-areas: "gallery-1 gallery-2 gallery-3"; } }
+    #section-3 div ul li {
+      background-size: cover;
+      height: 100%; }
+    #section-3 div ul #gallery-1 {
+      background-image: url("../img/sign.jpg");
+      background-position-y: -120px;
+      height: 500px;
+      background-repeat: no-repeat; }
+      @media (min-width: 768px) {
+        #section-3 div ul #gallery-1 {
+          grid-area: gallery-1;
+          height: 910px; } }
+      @media (min-width: 992px) {
+        #section-3 div ul #gallery-1 {
+          grid-area: gallery-1;
+          height: 910px; } }
+    #section-3 div ul #gallery-2 {
+      background-image: url("../img/perspectivecards.jpg");
+      height: 500px; }
+      @media (min-width: 768px) {
+        #section-3 div ul #gallery-2 {
+          grid-area: gallery-2;
+          height: 450px; } }
+      @media (min-width: 992px) {
+        #section-3 div ul #gallery-2 {
+          grid-area: gallery-2;
+          height: 450px; } }
+    #section-3 div ul #gallery-3 {
+      background-image: url("../img/stackedcards.jpg");
+      height: 500px; }
+      @media (min-width: 768px) {
+        #section-3 div ul #gallery-3 {
+          grid-area: gallery-3;
+          height: 450px; } }
+      @media (min-width: 992px) {
+        #section-3 div ul #gallery-3 {
+          grid-area: gallery-3;
+          height: 450px; } }

@@ -2,8 +2,29 @@
     Section 1
 ============= */
 #section-1{
-    .grid-content{
-        
-    }
+    div {
+        background-image: url('../img/beachhero.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 500px;
 
+        @include md{
+            height: 512px;
+        } 
+
+        @include lg{
+            height: 800px;
+        }
+
+        h1{
+            text-align: center; 
+            color: $blue;
+        }
+
+        h2{
+            text-align: center;
+            color: $lightblue;
+        }
+
+    }   
 }
