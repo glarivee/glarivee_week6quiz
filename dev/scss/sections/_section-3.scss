@@ -87,18 +87,18 @@
             @include lg{
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: 1fr;
-                grid-template-areas: "gallery1 gallery2 gallery3";
+                grid-template-areas: "content-1 content-2 content-3";
 
                 #sign{
-                    grid-area: "gallery1" ;
+                    grid-area: content-1 ;
                 }
 
                 #perspective{
-                    grid-area: "gallery2" ;
+                    grid-area: content-2 ;
                 }
 
                 #stacked{
-                    grid-area: "gallery3" ;
+                    grid-area: content-3 ;
                 }
                 
             }
