@@ -361,6 +361,14 @@ textarea {
 /* =============
     Footer
 ============= */
+#footer {
+  background-color: black;
+  height: 100px;
+  position: fixed;
+  top: 1600px;
+  left: 0;
+  width: 100%; }
+
 /* =============
     Section 1
 ============= */
@@ -368,7 +376,10 @@ textarea {
   background-image: url("../img/beachhero.jpg");
   background-size: cover;
   background-position: center;
-  height: 500px; }
+  height: 500px;
+  position: relative;
+  text-align: center;
+  padding-top: 500px; }
   @media (min-width: 768px) {
     #section-1 div {
       height: 512px; } }
@@ -383,123 +394,105 @@ textarea {
     color: #338595; }
 
 /* =============
-    Section 1
+    Section 2
 ============= */
-#section-2 #section-2-right {
-  display: grid;
-  grid-template-columns: 30px auto 30px;
-  grid-template-areas: ". section-2-right .";
-  padding: 15px 0;
-  color: #1A4B58; }
-  #section-2 #section-2-right div {
-    grid-area: ". section-2-right ."; }
-
-#section-2 aside {
-  background-image: url("../img/shoes.jpg");
-  background-size: cover;
-  background-position-x: -150px;
-  background-repeat: no-repeat; }
+#section-2 {
+  background-color: #EEEEEE; }
+  #section-2 #section-2-right {
+    text-align: justify;
+    padding: 30px 10px 50px 10px; }
+    #section-2 #section-2-right h1 {
+      text-align: center; }
+  #section-2 #shoes-img {
+    background-image: url("../img/shoes.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 320px; }
   @media (min-width: 768px) {
-    #section-2 aside {
-      height: 200px;
-      background-position-x: -180px; } }
+    #section-2 #section-2-right {
+      display: grid;
+      grid-template-columns: 70% 30%;
+      grid-template-areas: "text img"; }
+      #section-2 #section-2-right #section-2-right {
+        grid-area: text;
+        margin: 10px 20px; } }
   @media (min-width: 992px) {
-    #section-2 aside {
-      height: 900px;
-      background-position-x: -100px; } }
-@media (min-width: 768px) {
-  #section-2 {
-    display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "section-2-img section-2-right"; }
-    #section-2 #section-2-img {
-      grid-area: "section-2-img"; }
     #section-2 #section-2-right {
-      grid-area: "section-2-right"; } }
-
-@media (min-width: 992px) {
-  #section-2 {
-    display: grid;
-    grid-template-columns: 75% auto;
-    grid-template-areas: "section-2-img section-2-right"; }
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "img text"; }
+      #section-2 #section-2-right #section-2-right {
+        text-align: justify;
+        padding: 110px 60px;
+        font-size: 1.125rem; }
+      #section-2 #section-2-right #shoes-img {
+        height: 600px;
+        grid-area: img; } }
+  @media (min-width: 1200px) {
     #section-2 #section-2-right {
-      grid-area: section-2-right; } }
-
-@media (min-width: 768px) {
-  #section-2 {
-    padding: 80px 0; } }
-
-@media (min-width: 992px) {
-  #section-2 {
-    padding: 60px 20px; } }
-
+      padding-left: 100px;
+      padding-right: 100px; } }
 /* =============
     Section 3
 ============= */
 #section-3 div {
-  display: grid;
-  grid-template-columns: 15px auto 10px;
-  grid-template-areas: ". section-3 ."; }
-  #section-3 div ul {
-    grid-area: ". section-3 .";
-    display: grid;
-    grid-row-gap: 10px;
-    grid-column-gap: 50px; }
-    @media (min-width: 768px) {
-      #section-3 div ul {
-        display: grid;
-        grid-template-columns: 3fr 3fr;
-        grid-template-areas: "gallery-1 gallery-2 gallery-3"; } }
-    @media (min-width: 992px) {
-      #section-3 div ul {
-        display: grid;
-        grid-template-columns: 3fr 3fr;
-        grid-template-areas: "gallery-1 gallery-2 gallery-3"; } }
-    #section-3 div ul li {
-      background-size: cover;
-      height: 100%; }
-    #section-3 div ul #gallery-1 {
-      background-image: url("../img/sign.jpg");
-      background-position-y: -120px;
-      height: 500px;
-      background-repeat: no-repeat; }
-      @media (min-width: 768px) {
-        #section-3 div ul #gallery-1 {
-          grid-area: gallery-1;
-          height: 450px; } }
-      @media (min-width: 992px) {
-        #section-3 div ul #gallery-1 {
-          grid-area: gallery-1;
-          height: 450px; } }
-    #section-3 div ul #gallery-2 {
-      background-image: url("../img/perspectivecards.jpg");
-      height: 500px; }
-      @media (min-width: 768px) {
-        #section-3 div ul #gallery-2 {
-          grid-area: gallery-2;
-          height: 450px; } }
-      @media (min-width: 992px) {
-        #section-3 div ul #gallery-2 {
-          grid-area: gallery-2;
-          height: 450px; } }
-    #section-3 div ul #gallery-3 {
-      background-image: url("../img/stackedcards.jpg");
-      height: 500px; }
-      @media (min-width: 768px) {
-        #section-3 div ul #gallery-3 {
-          grid-area: gallery-3;
-          height: 450px; } }
-      @media (min-width: 992px) {
-        #section-3 div ul #gallery-3 {
-          grid-area: gallery-3;
-          height: 450px; } }
-/* =============
-    Footer
-============= */
-#footer {
-  background-color: black;
-  height: 100px;
-  position: fixed;
-  top: 1600px;
-  left: 0;
-  width: 100%; }
+  padding: 10px 10px; }
+  #section-3 div h1 {
+    text-align: center; }
+  #section-3 div img {
+    height: 200px; }
+  #section-3 div h1 {
+    text-align: center; }
+  #section-3 div #gallery h2 {
+    text-align: center;
+    color: #000; }
+  #section-3 div #gallery p {
+    padding: 10px 15px; }
+  #section-3 div #gallery #sign, #section-3 div #gallery #perspective, #section-3 div #gallery #stacked {
+    background-color: #EEEEEE;
+    margin-bottom: 20px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto; }
+  @media (min-width: 768px) {
+    #section-3 div #gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 10px 10px;
+      grid-template-areas: "P1 P1 P2 P2"  ". P3 P3 ."; }
+      #section-3 div #gallery #sign {
+        grid-area: P1; }
+        #section-3 div #gallery #sign img {
+          max-width: 350px; }
+        #section-3 div #gallery #sign #date-1 {
+          padding-top: 0px;
+          padding-bottom: 0px; }
+      #section-3 div #gallery #perspective {
+        grid-area: P2; }
+        #section-3 div #gallery #perspective img {
+          max-width: 350px; }
+        #section-3 div #gallery #perspective #date-2 {
+          padding-top: 20px;
+          padding-bottom: 0px; }
+      #section-3 div #gallery #stacked {
+        grid-area: P3; }
+        #section-3 div #gallery #stacked img {
+          max-width: 350px; }
+        #section-3 div #gallery #stacked #date-3 {
+          padding-top: 50px;
+          padding-bottom: 0px; } }
+  @media (min-width: 992px) {
+    #section-3 div #gallery {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "gallery1 gallery2 gallery3"; }
+      #section-3 div #gallery #sign {
+        grid-area: "gallery1"; }
+      #section-3 div #gallery #perspective {
+        grid-area: "gallery2"; }
+      #section-3 div #gallery #stacked {
+        grid-area: "gallery3"; } }
+  @media (min-width: 1200px) {
+    #section-3 div #gallery {
+      margin-left: 100px;
+      margin-right: 100px; } }

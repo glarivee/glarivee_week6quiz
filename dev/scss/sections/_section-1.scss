@@ -7,6 +7,10 @@
         background-size: cover;
         background-position: center;
         height: 500px;
+        position: relative;
+
+        text-align: center;
+        padding-top: 500px;
 
         @include md{
             height: 512px;
